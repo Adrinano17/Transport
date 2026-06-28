@@ -1,0 +1,1 @@
+"""GetPredictionByIdUseCase — single record lookup."""

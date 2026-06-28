@@ -1,0 +1,2 @@
+model,mae,rmse,r2,mape,n_samples
+random_forest,322.5,526.47,0.9817,7.24,2000

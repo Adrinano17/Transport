@@ -1,0 +1,31 @@
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+
+# HTTP & resilience
+httpx>=0.27.0
+tenacity>=9.0.0
+
+# Data & ML
+sqlalchemy>=2.0.36
+aiosqlite>=0.20.0
+scikit-learn>=1.5.0
+joblib>=1.4.0
+numpy>=2.1.0
+pandas>=2.2.0
+openpyxl>=3.1.0
+pyarrow>=18.0.0
+matplotlib>=3.9.0
+seaborn>=0.13.0
+
+# Utils
+python-dotenv>=1.0.0
+tzdata>=2024.1
+
+# Dev / test
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+httpx>=0.27.0
+anyio>=4.0.0

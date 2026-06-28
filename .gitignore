@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+backend/artifacts/*.pkl
+backend/artifacts/*.joblib
+!backend/artifacts/.gitkeep
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.env
+
+# Data & IDE
+data/raw/
+data/reports/
+!data/reports/.gitkeep
+*.sqlite
+*.db
+.idea/
+.vscode/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

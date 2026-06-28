@@ -1,0 +1,22 @@
+[project]
+name = "lagos-fare"
+version = "0.1.0"
+description = "Lagos transportation fare prediction API"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+markers = [
+    "unit: Unit tests (no I/O)",
+    "api: HTTP API tests",
+    "integration: End-to-end flow tests",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]

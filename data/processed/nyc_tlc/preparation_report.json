@@ -1,0 +1,30 @@
+{
+  "input_path": "c:\\Users\\ayinlab\\Transport\\data\\raw\\nyc_tlc\\yellow_tripdata_sample.parquet",
+  "rows_raw": 5002,
+  "rows_cleaned": 4552,
+  "rows_train": 3641,
+  "rows_test": 911,
+  "target_column": "fare_amount",
+  "feature_columns": [
+    "trip_distance",
+    "trip_duration_min",
+    "avg_speed_mph",
+    "passenger_count",
+    "pickup_hour",
+    "pickup_day_of_week",
+    "pickup_month",
+    "is_weekend",
+    "is_rush_hour",
+    "PULocationID",
+    "DOLocationID",
+    "payment_type",
+    "RatecodeID",
+    "trip_duration_per_mile",
+    "is_airport_trip",
+    "same_zone_trip"
+  ],
+  "split_strategy": "time",
+  "outlier_removal": true,
+  "fare_amount_mean": 11.139719910284207,
+  "fare_amount_std": 5.404630578045031
+}
