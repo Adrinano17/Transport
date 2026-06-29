@@ -14,9 +14,9 @@ export function PredictionResult({ prediction }: Props) {
 
   return (
     <div className="result-card">
-      <p className="result-label">Estimated Lagos Fare</p>
+      <p className="result-label">Lagos estimate</p>
       <p className="result-fare">{formatNaira(fare)}</p>
-      <p className="result-source">Local Lagos pricing · {prediction.model_version}</p>
+      <p className="result-source">{prediction.model_version}</p>
 
       {(prediction.pickup_label || prediction.dropoff_label) && (
         <p className="result-route">

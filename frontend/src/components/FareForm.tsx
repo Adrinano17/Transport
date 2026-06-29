@@ -95,7 +95,7 @@ export function FareForm({ onSubmit, loading }: FareFormProps) {
       </div>
       <div className="location-selectors">
         <label className="location-select">
-          Pickup area
+          Pickup
           <select
             value={pickupKey}
             onChange={(e) => applyLocation(e.target.value, true)}
@@ -108,7 +108,7 @@ export function FareForm({ onSubmit, loading }: FareFormProps) {
           </select>
         </label>
         <label className="location-select">
-          Dropoff area
+          Dropoff
           <select
             value={dropoffKey}
             onChange={(e) => applyLocation(e.target.value, false)}
@@ -121,12 +121,10 @@ export function FareForm({ onSubmit, loading }: FareFormProps) {
           </select>
         </label>
       </div>
-      <p className="location-hint">
-        Choose a Lagos location to auto-fill coordinates, or input your own custom pickup and dropoff points within the Lagos service area.
-      </p>
+      <p className="location-hint">Use a preset route or update the Lagos coordinates below.</p>
 
       <label className="transport-select">
-        Transport Type
+        Mode
         <select
           value={transportType}
           onChange={(e) => setTransportType(e.target.value as TransportType)}
@@ -140,7 +138,7 @@ export function FareForm({ onSubmit, loading }: FareFormProps) {
       </label>
 
       <fieldset>
-        <legend>Pickup Location (Lagos)</legend>
+        <legend>Pickup</legend>
         <input
           placeholder="Latitude"
           value={pickupLat}
@@ -154,14 +152,14 @@ export function FareForm({ onSubmit, loading }: FareFormProps) {
           required
         />
         <input
-          placeholder="Area name (e.g. Ikeja, Yaba)"
+          placeholder="Area name"
           value={pickupLabel}
           onChange={(e) => setPickupLabel(e.target.value)}
         />
       </fieldset>
 
       <fieldset>
-        <legend>Destination (Lagos)</legend>
+        <legend>Dropoff</legend>
         <input
           placeholder="Latitude"
           value={dropoffLat}
@@ -175,7 +173,7 @@ export function FareForm({ onSubmit, loading }: FareFormProps) {
           required
         />
         <input
-          placeholder="Area name (e.g. Lekki, Victoria Island)"
+          placeholder="Area name"
           value={dropoffLabel}
           onChange={(e) => setDropoffLabel(e.target.value)}
         />

@@ -11,11 +11,8 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <h1>Lagos Transport Fare Prediction System</h1>
-        <p>
-          Predict fares across Lagos in Nigerian Naira using Lagos-specific pricing, traffic, and weather data.
-          Estimates are calibrated for Lagos transport modes and not NYC taxi fares.
-        </p>
+        <h1>Lagos Fare Predictor</h1>
+        <p>Fast, local fare estimates for Lagos trips in Nigerian Naira.</p>
       </header>
 
       <main>
@@ -26,7 +23,7 @@ export default function App() {
       </main>
 
       <footer>
-        <p>Supported areas: Ikeja · Yaba · Lekki · VI · Ikoyi · Ajah · Oshodi · Berger · CMS · Airport</p>
+        <p>Built for Lagos routes, weather, and traffic.</p>
       </footer>
     </div>
   );
